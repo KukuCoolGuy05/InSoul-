@@ -51,7 +51,7 @@
             <objects>
                 <viewController id="P7v-je-jC4" customClass="HomeViewController" customModule="InSoles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XIF-bJ-Lsj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home (2)" translatesAutoresizingMaskIntoConstraints="NO" id="OYa-G4-6BM">
@@ -59,7 +59,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgF-Fk-Xqw">
-                                <rect key="frame" x="47" y="161" width="255" height="41"/>
+                                <rect key="frame" x="47" y="161" width="347" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.046105124060000002" green="0.2088961899" blue="0.16820293659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -187,7 +187,7 @@
             <objects>
                 <viewController id="NN0-P8-S9I" customClass="AboutViewController" customModule="InSoles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lJQ-Zc-IZI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image0 (3)" translatesAutoresizingMaskIntoConstraints="NO" id="gWf-a5-Xty">
@@ -233,25 +233,34 @@
             </objects>
             <point key="canvasLocation" x="2821.739130434783" y="610.71428571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="wFK-b4-GsV">
             <objects>
-                <viewController id="tN8-0w-vh5" sceneMemberID="viewController">
+                <viewController id="tN8-0w-vh5" customClass="ResultsViewController" customModule="InSoles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vJo-Az-59k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Scan Results (1)" translatesAutoresizingMaskIntoConstraints="NO" id="0Sf-NS-2Ql">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Scan Results" translatesAutoresizingMaskIntoConstraints="NO" id="0Sf-NS-2Ql">
                                 <rect key="frame" x="-19" y="0.0" width="453" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pn-uW-Bh9">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pn-uW-Bh9" userLabel="Rescan">
                                 <rect key="frame" x="119" y="539" width="173" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
                                     <segue destination="9D3-gy-Aky" kind="show" id="g5e-WA-6Nj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0H-YZ-S6G" userLabel="BackHome">
+                                <rect key="frame" x="250" y="-13" width="144" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="P7v-je-jC4" kind="show" id="BQP-2S-Pu3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -267,11 +276,12 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="g5e-WA-6Nj"/>
+        <segue reference="BQP-2S-Pu3"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Getting Started (2)" width="428" height="926"/>
         <image name="Home (2)" width="428" height="926"/>
-        <image name="Scan Results (1)" width="428" height="926"/>
+        <image name="Scan Results" width="428" height="926"/>
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
         <image name="image0 (3)" width="4032" height="3024"/>
         <systemColor name="systemBackgroundColor">
