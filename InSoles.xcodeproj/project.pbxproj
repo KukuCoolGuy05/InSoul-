@@ -12,6 +12,7 @@
 		CE0FDD4529B4B1B70083627E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0FDD4429B4B1B70083627E /* GoogleService-Info.plist */; };
 		CE0FDD4829B4B2810083627E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CE0FDD4729B4B2810083627E /* FirebaseAnalytics */; };
 		CE0FDD4A29B4B2810083627E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CE0FDD4929B4B2810083627E /* FirebaseFirestore */; };
+		CE0FDD4D29B4B9EB0083627E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CE0FDD4C29B4B9EB0083627E /* FirebaseStorage */; };
 		CEFD229329B475D500A252BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD229229B475D500A252BB /* AppDelegate.swift */; };
 		CEFD229529B475D500A252BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD229429B475D500A252BB /* SceneDelegate.swift */; };
 		CEFD229729B475D500A252BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD229629B475D500A252BB /* ViewController.swift */; };
@@ -45,17 +46,26 @@
 			files = (
 				CE0FDD4829B4B2810083627E /* FirebaseAnalytics in Frameworks */,
 				CE0FDD4A29B4B2810083627E /* FirebaseFirestore in Frameworks */,
+				CE0FDD4D29B4B9EB0083627E /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE0FDD4B29B4B9EB0083627E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEFD228629B475D500A252BB = {
 			isa = PBXGroup;
 			children = (
 				CEFD229129B475D500A252BB /* InSoles */,
 				CEFD229029B475D500A252BB /* Products */,
+				CE0FDD4B29B4B9EB0083627E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +115,7 @@
 			packageProductDependencies = (
 				CE0FDD4729B4B2810083627E /* FirebaseAnalytics */,
 				CE0FDD4929B4B2810083627E /* FirebaseFirestore */,
+				CE0FDD4C29B4B9EB0083627E /* FirebaseStorage */,
 			);
 			productName = InSoles;
 			productReference = CEFD228F29B475D500A252BB /* InSoles.app */;
@@ -413,6 +424,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE0FDD4629B4B2810083627E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		CE0FDD4C29B4B9EB0083627E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE0FDD4629B4B2810083627E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
