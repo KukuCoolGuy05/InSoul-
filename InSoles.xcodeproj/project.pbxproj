@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		CE0FDD4129B488A00083627E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FDD4029B488A00083627E /* AboutViewController.swift */; };
 		CE0FDD4329B491560083627E /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FDD4229B491560083627E /* ResultsViewController.swift */; };
+		CE0FDD4529B4B1B70083627E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0FDD4429B4B1B70083627E /* GoogleService-Info.plist */; };
+		CE0FDD4829B4B2810083627E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CE0FDD4729B4B2810083627E /* FirebaseAnalytics */; };
+		CE0FDD4A29B4B2810083627E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CE0FDD4929B4B2810083627E /* FirebaseFirestore */; };
 		CEFD229329B475D500A252BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD229229B475D500A252BB /* AppDelegate.swift */; };
 		CEFD229529B475D500A252BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD229429B475D500A252BB /* SceneDelegate.swift */; };
 		CEFD229729B475D500A252BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD229629B475D500A252BB /* ViewController.swift */; };
@@ -22,6 +25,7 @@
 /* Begin PBXFileReference section */
 		CE0FDD4029B488A00083627E /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		CE0FDD4229B491560083627E /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		CE0FDD4429B4B1B70083627E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEFD228F29B475D500A252BB /* InSoles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InSoles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFD229229B475D500A252BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFD229429B475D500A252BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0FDD4829B4B2810083627E /* FirebaseAnalytics in Frameworks */,
+				CE0FDD4A29B4B2810083627E /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +81,7 @@
 				CEFD229B29B475E400A252BB /* Assets.xcassets */,
 				CEFD229D29B475E400A252BB /* LaunchScreen.storyboard */,
 				CEFD22A029B475E400A252BB /* Info.plist */,
+				CE0FDD4429B4B1B70083627E /* GoogleService-Info.plist */,
 			);
 			path = InSoles;
 			sourceTree = "<group>";
@@ -95,6 +102,10 @@
 			dependencies = (
 			);
 			name = InSoles;
+			packageProductDependencies = (
+				CE0FDD4729B4B2810083627E /* FirebaseAnalytics */,
+				CE0FDD4929B4B2810083627E /* FirebaseFirestore */,
+			);
 			productName = InSoles;
 			productReference = CEFD228F29B475D500A252BB /* InSoles.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +134,9 @@
 				Base,
 			);
 			mainGroup = CEFD228629B475D500A252BB;
+			packageReferences = (
+				CE0FDD4629B4B2810083627E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CEFD229029B475D500A252BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFD229F29B475E400A252BB /* LaunchScreen.storyboard in Resources */,
+				CE0FDD4529B4B1B70083627E /* GoogleService-Info.plist in Resources */,
 				CEFD229C29B475E400A252BB /* Assets.xcassets in Resources */,
 				CEFD229A29B475D500A252BB /* Main.storyboard in Resources */,
 			);
@@ -376,6 +391,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE0FDD4629B4B2810083627E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE0FDD4729B4B2810083627E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE0FDD4629B4B2810083627E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CE0FDD4929B4B2810083627E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE0FDD4629B4B2810083627E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEFD228729B475D500A252BB /* Project object */;
 }
