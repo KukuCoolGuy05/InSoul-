@@ -118,14 +118,14 @@
             <objects>
                 <viewController id="9D3-gy-Aky" customClass="CameraViewController" customModule="InSoles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="37g-uS-rf6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MoJ-zd-rFn">
-                                <rect key="frame" x="20" y="108" width="374" height="662"/>
+                                <rect key="frame" x="20" y="20" width="374" height="696"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyh-Nq-6SM">
-                                <rect key="frame" x="30" y="790" width="354" height="52"/>
+                                <rect key="frame" x="30" y="736" width="354" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="hLy-Jx-eeq"/>
                                 </constraints>
@@ -148,7 +148,13 @@
                             <constraint firstItem="vyh-Nq-6SM" firstAttribute="leading" secondItem="qK4-R1-8qM" secondAttribute="leading" constant="30" id="pQR-Vg-8cH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="pm7-uQ-sLX"/>
+                    <navigationItem key="navigationItem" id="pm7-uQ-sLX">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrowshape.turn.up.right.fill" catalog="system" id="VW6-Gv-Oof">
+                            <connections>
+                                <segue destination="tN8-0w-vh5" kind="show" id="Brc-Aw-gRS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="button" destination="vyh-Nq-6SM" id="yET-Ug-hxx"/>
                         <outlet property="imageView" destination="MoJ-zd-rFn" id="AAu-d1-j2s"/>
@@ -232,23 +238,41 @@
             <objects>
                 <viewController id="tN8-0w-vh5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vJo-Az-59k">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Scan Results (1)" translatesAutoresizingMaskIntoConstraints="NO" id="0Sf-NS-2Ql">
+                                <rect key="frame" x="-19" y="0.0" width="453" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pn-uW-Bh9">
+                                <rect key="frame" x="119" y="539" width="173" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="9D3-gy-Aky" kind="show" id="g5e-WA-6Nj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="55u-ja-oOm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Age-6m-nGf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXN-hM-moc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3765" y="266"/>
+            <point key="canvasLocation" x="3763.7681159420295" y="265.84821428571428"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="N4L-6T-uug"/>
+        <segue reference="g5e-WA-6Nj"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Getting Started (2)" width="428" height="926"/>
         <image name="Home (2)" width="428" height="926"/>
+        <image name="Scan Results (1)" width="428" height="926"/>
+        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
         <image name="image0 (3)" width="4032" height="3024"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
