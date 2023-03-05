@@ -176,21 +176,71 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="so2-S4-1Uh">
             <objects>
-                <viewController id="NN0-P8-S9I" sceneMemberID="viewController">
+                <viewController id="NN0-P8-S9I" customClass="AboutViewController" customModule="InSoles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lJQ-Zc-IZI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image0 (3)" translatesAutoresizingMaskIntoConstraints="NO" id="gWf-a5-Xty">
+                                <rect key="frame" x="20" y="103" width="374" height="313"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Niteesh G, Neil R, Kurinji S, Elijah B, Eric M and Lance L(Left To Right)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLD-FT-XXF">
+                                <rect key="frame" x="16" y="424" width="383" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96408420800000005" green="0.98452562089999995" blue="0.98034268619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" red="0.0015952870019999999" green="0.56780803199999996" blue="0.43300318719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aidan B and Shaurya K (Not In The Picture)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzW-Nq-phx">
+                                <rect key="frame" x="16" y="588" width="383" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96408420800000005" green="0.98452562089999995" blue="0.98034268619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" red="0.0015952870019999999" green="0.56780803199999996" blue="0.43300318719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30n-NH-N4Q">
+                                <rect key="frame" x="18" y="707" width="379" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96408420800000005" green="0.98452562089999995" blue="0.98034268619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0015952870019999999" green="0.56780803199999996" blue="0.43300318719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Here For More Information!">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="openURL:" destination="NN0-P8-S9I" eventType="touchUpInside" id="bZq-0Q-P27"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="9c8-rK-Arb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.50507521629999996" green="0.85341322419999999" blue="0.77237999440000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="86X-Pu-RFf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ayl-Ps-nTr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2822" y="611"/>
+            <point key="canvasLocation" x="2821.739130434783" y="610.71428571428567"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wFK-b4-GsV">
+            <objects>
+                <viewController id="tN8-0w-vh5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vJo-Az-59k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="55u-ja-oOm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qXN-hM-moc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3765" y="266"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -199,6 +249,7 @@
     <resources>
         <image name="Getting Started (2)" width="428" height="926"/>
         <image name="Home (2)" width="428" height="926"/>
+        <image name="image0 (3)" width="4032" height="3024"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
