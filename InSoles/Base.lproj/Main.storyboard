@@ -51,7 +51,7 @@
             <objects>
                 <viewController id="P7v-je-jC4" customClass="HomeViewController" customModule="InSoles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XIF-bJ-Lsj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home (2)" translatesAutoresizingMaskIntoConstraints="NO" id="OYa-G4-6BM">
@@ -118,14 +118,14 @@
             <objects>
                 <viewController id="9D3-gy-Aky" customClass="CameraViewController" customModule="InSoles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="37g-uS-rf6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MoJ-zd-rFn">
-                                <rect key="frame" x="20" y="20" width="374" height="696"/>
+                                <rect key="frame" x="20" y="108" width="374" height="662"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyh-Nq-6SM">
-                                <rect key="frame" x="30" y="736" width="354" height="52"/>
+                                <rect key="frame" x="30" y="790" width="354" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="hLy-Jx-eeq"/>
                                 </constraints>
@@ -151,7 +151,7 @@
                     <navigationItem key="navigationItem" id="pm7-uQ-sLX">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="arrowshape.turn.up.right.fill" catalog="system" id="VW6-Gv-Oof">
                             <connections>
-                                <segue destination="tN8-0w-vh5" kind="show" id="Brc-Aw-gRS"/>
+                                <segue destination="tN8-0w-vh5" kind="show" identifier="segueImage" id="Brc-Aw-gRS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -187,7 +187,7 @@
             <objects>
                 <viewController id="NN0-P8-S9I" customClass="AboutViewController" customModule="InSoles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lJQ-Zc-IZI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image0 (3)" translatesAutoresizingMaskIntoConstraints="NO" id="gWf-a5-Xty">
@@ -238,7 +238,7 @@
             <objects>
                 <viewController id="tN8-0w-vh5" customClass="ResultsViewController" customModule="InSoles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vJo-Az-59k">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Scan Results" translatesAutoresizingMaskIntoConstraints="NO" id="0Sf-NS-2Ql">
@@ -254,20 +254,18 @@
                                     <segue destination="9D3-gy-Aky" kind="show" id="g5e-WA-6Nj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0H-YZ-S6G" userLabel="BackHome">
-                                <rect key="frame" x="250" y="-13" width="144" height="124"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gf-IC-0Hp">
+                                <rect key="frame" x="87" y="359" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <segue destination="P7v-je-jC4" kind="show" id="BQP-2S-Pu3"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="55u-ja-oOm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Age-6m-nGf"/>
+                    <connections>
+                        <outlet property="imageVIewResult" destination="3gf-IC-0Hp" id="PMv-TG-k5f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXN-hM-moc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -275,8 +273,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="g5e-WA-6Nj"/>
-        <segue reference="BQP-2S-Pu3"/>
+        <segue reference="N4L-6T-uug"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Getting Started (2)" width="428" height="926"/>

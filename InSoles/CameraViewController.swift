@@ -22,6 +22,15 @@ class CameraViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if(segue.identifier == "segueImage") {
+            let temp = imageView.image
+            let nvc = segue.destination as! ResultsViewController
+            nvc.image = temp
+        }
+        
+    }
+    
     @IBAction func didTapButton(){
         let picker = UIImagePickerController()
         picker.sourceType = .camera
