@@ -13,6 +13,8 @@
 		CEFD229A29B475D500A252BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFD229829B475D500A252BB /* Main.storyboard */; };
 		CEFD229C29B475E400A252BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFD229B29B475E400A252BB /* Assets.xcassets */; };
 		CEFD229F29B475E400A252BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFD229D29B475E400A252BB /* LaunchScreen.storyboard */; };
+		CEFD22A729B4787100A252BB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD22A629B4787100A252BB /* HomeViewController.swift */; };
+		CEFD22A929B47D0F00A252BB /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD22A829B47D0F00A252BB /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CEFD229B29B475E400A252BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEFD229E29B475E400A252BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEFD22A029B475E400A252BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFD22A629B4787100A252BB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CEFD22A829B47D0F00A252BB /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				CEFD229429B475D500A252BB /* SceneDelegate.swift */,
 				CEFD229629B475D500A252BB /* ViewController.swift */,
 				CEFD229829B475D500A252BB /* Main.storyboard */,
+				CEFD22A829B47D0F00A252BB /* CameraViewController.swift */,
+				CEFD22A629B4787100A252BB /* HomeViewController.swift */,
 				CEFD229B29B475E400A252BB /* Assets.xcassets */,
 				CEFD229D29B475E400A252BB /* LaunchScreen.storyboard */,
 				CEFD22A029B475E400A252BB /* Info.plist */,
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFD229729B475D500A252BB /* ViewController.swift in Sources */,
+				CEFD22A929B47D0F00A252BB /* CameraViewController.swift in Sources */,
 				CEFD229329B475D500A252BB /* AppDelegate.swift in Sources */,
 				CEFD229529B475D500A252BB /* SceneDelegate.swift in Sources */,
+				CEFD22A729B4787100A252BB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
